@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 16px;
+}
+@media screen and (min-width: 576px) {
+  html,
+  body {
+    font-size: calc(16px + 4 * ((100vw - 576px) / 416));
+  }
+}
+@media screen and (min-width: 992px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > #wrapper {
+  margin: auto;
+}
+body > #wrapper h1,
+body > #wrapper p {
+  font-family: Lora, "Times New Roman";
+  margin: 16px 0;
+}
+body > #wrapper h1 {
+  font-weight: normal;
+  text-align: center;
+  line-height: 1;
+  color: #333;
+  display: block;
+  padding-bottom: 16px;
+  border-bottom: 4px solid #ccc;
+}
+body > #wrapper h1 {
+  font-size: 26px;
+}
+@media screen and (min-width: 300px) {
+  body > #wrapper h1 {
+    font-size: calc(26px + 54 * ((100vw - 300px) / 700));
+  }
+}
+@media screen and (min-width: 1000px) {
+  body > #wrapper h1 {
+    font-size: 80px;
+  }
+}
+body > #wrapper a {
+  color: #428bca;
+  text-decoration: none;
+}
+body > #wrapper canvas {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+}

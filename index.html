@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recaman Sequence Visualization</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #canvas {
+        border: 3px solid red;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="wrapper">
+      <input type="range" min="1" max="65" id="rangeInput" value="65" />
+      <span id="rangeValue">65</span>
+      <canvas height="600px" id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
